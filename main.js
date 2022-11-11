@@ -33,6 +33,6 @@ const getPlanets = async () => {
   // return listOfPlanets
   
 }
-
+console.log()
 getPlanets()
 
