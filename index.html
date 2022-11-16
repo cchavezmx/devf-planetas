@@ -3,22 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Vite App</title>
   </head>
   <body>
     <div id="wrapper">
       <nav>
-        <span>Planetas</span>
-        <div>
-          <a>Saturno</a>
-          <a>Saturno</a>
-          <a>Saturno</a>
-          <a>Saturno</a>
-          <a>Saturno</a>
+        <h1>THE PLANETS</h1>
+        <div id="planets-menu" class="planets-list">
+          <!-- no es tan buena idea crear un menu de una web, con javascript -->
         </div>
       </nav>
+      <main>
+        <div class="planet-details">
+          <picture id="planeta">
+            <img src="none_planet.png" alt="none" class="planetPic"/>
+          </picture>
+          <div id="planet-info" class="data-planet">
+            <h2>EARTH</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis non sed ipsam debitis. Autem sunt odio ab ducimus, repellendus asperiores quae numquam accusamus quod eos qui quaerat dolor eius?
+            </p>
+            <div class="button-actions">
+              <button data-action="Overiew">Overiew</button>
+              <button data-action="Structure">Internal Structure</button>
+              <button data-action="Surface">Surface Geology</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="extra_data-content">
+        <div class="section_data-tab">
+          <p>Rotation Time</p>
+          <span class="big-span"></span>
+        </div>
+        <div class="section_data-tab">
+          <p>Revolution Time</p>
+          <span class="big-span"></span>
+        </div>
+        <div class="section_data-tab">
+          <p>Radius</p>
+          <span class="big-span"></span>
+        </div>
+        <div class="section_data-tab">
+          <p>Average Temp</p>
+          <span class="big-span"></span>
+        </div>
+      </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
